@@ -18,7 +18,7 @@ const Hero = () => {
                 {/* the best ad */}
                 <div className="the-best-ad">
                     <motion.div initial={{left:'200px'}} whileInView={{left:'9px'}} transition={{...transition, type: 'tween'}} ></motion.div>
-                    <span>Let's Buld Something Together</span>
+                    <span>Let&rsquo;s Buld Something Together</span>
                 </div>
 
                 {/* Hero Heading */}
@@ -31,7 +31,7 @@ const Hero = () => {
                         <span>Abhishek Das</span>
                     </div>
                     <div>
-                        <span>I'm a fullstack developer specializing in bulding exceptional digital experiences.  I am also passionate about mobile app development and Blockchain development.</span>
+                        <span>I&rsquo;m a fullstack developer specializing in bulding exceptional digital experiences.  I am also passionate about mobile app development and Blockchain development.</span>
                     </div>
                 </div>
 
