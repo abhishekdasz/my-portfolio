@@ -1,0 +1,20 @@
+[
+    {
+        "index": "1",
+        "course": "BTech",
+        "college":  "C.V. Raman Global University",
+        "year": "2024"
+    },
+    {
+        "index": "2",
+        "course": "Intermediate",
+        "college":  "Basic Science And Humanities",
+        "year": "2020"
+    },
+    {
+        "index": "3",
+        "course": "Schooling",
+        "college":  "School Of Integral Education",
+        "year": "2018"
+    }
+]
