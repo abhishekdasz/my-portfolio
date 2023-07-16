@@ -6,8 +6,12 @@ import Tilt from "react-parallax-tilt"
 import Image from 'next/image'
 import github from "../public/github.png"
 import StarCanvas from './Stars'
+import Allprojects from '@/pages/all-projects'
+
+import { useRouter } from 'next/router'
 
 const Project = () => {
+  const router = useRouter();
   return (
     <div className='proj-sec'>
     <div className="headings">
@@ -43,19 +47,15 @@ const Project = () => {
                           <p> {element.tech2} </p>
                           <p> {element.tech3} </p>
                         </div>
-                    </div>
-                   
+                    </div> 
                 </Tilt>
                 </div>
-                // <div key={element.index}>
-                //     <Tilt>
-                //         <div className='card'>
-                //             <h1> {element.name} </h1>
-                //         </div>
-                //     </Tilt>             
-                // </div> 
             )  
         })}
+      </div>
+
+      <div className='btn-container'>
+        <div className="explore-btn" onClick={()=>{router.push('/all-projects')}} > More Projects </div>
       </div>
     </div>
 

@@ -19,10 +19,10 @@
     display: none;
   }
   // background: rgba(0, 0, 0, 0.689);
-  background-image: url(../public/back-img.jpg);
+  // background-image: url(../public/back-img.jpg);
   // background-blend-mode: darken; 
   color: #fff;
-  // background: black;
+  background: black;
 }
 
 /* Navbar Section */
@@ -40,7 +40,7 @@
     
     .nav-container
     {
-      width: 1200px;
+      width: 80%;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem 0;
@@ -58,6 +58,12 @@
           list-style: none;
           cursor: pointer;
           font-weight: 500;
+
+          a 
+          {
+            text-decoration: none;
+            color: #fff;
+          }
         }
       }
       .right-nav
@@ -254,7 +260,7 @@ button
 // Abouts Section starts here
 .about-sec
 {
-  // background: black;
+  background: black;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -404,6 +410,8 @@ button
 .projects
 {
   height: 100vh;
+  background: black;
+}
 
   .proj-sec
   {
@@ -412,6 +420,23 @@ button
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    .btn-container 
+    {
+      width: 82%;
+      display: flex;
+      justify-content: flex-end;
+
+      .explore-btn
+      {
+        background: orange;
+        padding: 0.5rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 10;
+      }
+    }
   }
 
   .headings
@@ -433,7 +458,6 @@ button
       margin-bottom: 1rem;
     }
   }
-}
 .project-section
 {
   padding: 1rem;
@@ -445,13 +469,15 @@ button
 .card-container
 {
   display: flex;
-  gap: 9rem;
-  // justify-content: space-evenly;
+  /* gap: 9rem; */
   align-items: center;
   flex-wrap: wrap;
   z-index: 2;
+  justify-content: space-around;
+  width: 90%;
+}
 
-  .card
+.card
   {
     width: 285px;
     padding: 10px;
@@ -526,6 +552,104 @@ button
       p:nth-of-type(3)
       {
         color: #ff72fa;
+      }
+    }
+  }
+
+
+// .all-projects 
+// {
+//   background: black;
+//   color: #fff;
+
+//   .all-proj-sec
+//   {
+//     padding: 4rem 0;
+
+//     .projects-blog-section
+//     {
+//       .projects-blog-container
+//       {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 5rem;
+
+
+//         .my-projects
+//         {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           width: 80%;
+
+//           .blogs-content
+//           {
+//             h4
+//             {
+//               font-size: 1.7rem;
+//             }
+//             li 
+//             {
+//               font-size: 1.2rem;
+//             }
+//           }
+
+//           p 
+//           {
+//             width: 75%;
+//             font-size: 1.5rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.all-projects 
+{
+  background: black;
+  color: #fff;
+  min-height: 100vh;
+
+  .all-proj-sec
+  {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .filter-projs
+    {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+      
+      span 
+      {
+        background: orange;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+    }
+    .all-projects-card-section
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .all-proj-card-container
+      {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 2;
+        justify-content: space-around;
+        width: 75%;
+
       }
     }
   }
