@@ -8,7 +8,11 @@ const Navbar = () => {
     <div className='nav-sec'>
         <div className='nav-container'>
             <div className="left-nav">
-                <Link href='/'> <Image src='/logo.png' alt='logo' width={100} height={30} /> </Link>
+                {/* <Link href='/'> <Image src='/logo.png' alt='logo' width={100} height={30} /> </Link> */}
+                <h1>
+                    <Link className="name-logo" spy smooth offset={50} duration={500} href='/'>dCode.</Link>
+                    <span className="blink" />
+                </h1>
                 <ul>
                     <Link href='/'>  <li> Home </li> </Link>
                     <Link href='/about'>  <li> About </li> </Link>
